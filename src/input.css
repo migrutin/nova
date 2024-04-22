@@ -54,3 +54,76 @@
     margin-top: 20px;
     border-radius: 0.5rem;
   }
+
+  .background{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .one-card {
+    background-color: #e0e7ff;
+    height: 70vh;
+    width: 110vh;
+    margin-top: 20px;
+    border-radius: 0.425rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .tanker-name{
+    color:rgb(79 70 229);
+    font-weight: bold; 
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .table-container {
+    width: 100%;
+    overflow-x: auto; 
+    background-color: white;
+  }
+
+ .table-head{
+    background-color: #a5b4fc;
+    border: 1px solid #ccc;
+}
+
+ .tr{ 
+    text-color: white;
+    border: 1px solid #ccc;
+    width: 10px;
+    height:5px
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #818cf8;
+    border-radius: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+
+  .sum{
+    color:rgb(79 70 229);
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    margin-top: 0px;
+  }
+
+  .row{
+    display: flex;
+    
+  }
+
+ 
