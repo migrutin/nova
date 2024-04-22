@@ -1,13 +1,30 @@
 import React, { useState } from 'react';
-import LoginPage from './LoginPage';
-import Tanker from './Tanker';
 import TankerList from './TankerList';
-
+import LoginPage from './LoginPage';
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('user');
+  };
+
   
   return (
-    <div><TankerList/></div>
-    
+    <div >
+      {isLoggedIn ? (
+        <div>
+          <TankerList /> 
+          <button onClick={handleLogout}>Odjavi se</button>
+        </div>
+      ) : (
+        <LoginPage onLogin={handleLogin} />
+      )}
+    </div>
   );
 };
 
