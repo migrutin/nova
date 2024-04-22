@@ -118,12 +118,15 @@
     color:rgb(79 70 229);
     font-weight: bold; 
     font-size: 1.5rem; 
-    margin-top: 0px;
+    margin-top: 16px;
   }
 
-  .row{
-    display: flex;
-    
+  .report{
+    margin-top: 16px;
+    margin-left: 216px;
+    width: 96px;
+    cursor: pointer;
+
   }
 
  
