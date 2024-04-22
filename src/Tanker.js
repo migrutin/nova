@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Header from "./Header";
 
 const Tanker = ({ tankerNumber, initialName }) => {
 
     const [tankerName, setTankerName] = useState(
         localStorage.getItem(`tankerName${tankerNumber}`) || initialName
     );
-    const [input, setInput] = useState(Array.from({ length: 20 }).map(() => 0)); //inicijalizujem input i output 
+    const [input, setInput] = useState(Array.from({ length: 20 }).map(() => 0)); 
     const [output, setOutput] = useState(Array.from({ length: 20 }).map(() => 0));
 
     const handleNameChange = () => {
